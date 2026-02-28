@@ -1,4 +1,4 @@
-import { Play, Calendar, ArrowRight } from 'lucide-react';
+import { Play, Calendar, ArrowRight, MessageCircle } from 'lucide-react'; // Added MessageCircle
 import Link from 'next/link';
 
 export default function Hero() {
@@ -32,8 +32,8 @@ export default function Hero() {
               New broadcasts streaming live from our YouTube channel.
             </p>
 
+            {/* Button Group */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
-              {/* Updated Link to your YouTube Channel Videos */}
               <Link 
                 href="https://www.youtube.com/@detentesentinellevivreleva1215/videos" 
                 target="_blank"
@@ -42,6 +42,17 @@ export default function Hero() {
               >
                 <Play fill="currentColor" size={20} />
                 Watch Latest
+              </Link>
+
+              {/* Added WhatsApp Channel Button */}
+              <Link 
+                href="https://whatsapp.com/channel/0029Vb9XQry6mYPTjoAeR801" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 rounded-xl bg-emerald-600 px-8 py-4 text-lg font-bold text-white hover:bg-emerald-700 transition-all shadow-lg shadow-emerald-600/20"
+              >
+                <MessageCircle size={20} />
+                Join WhatsApp
               </Link>
               
               <Link 
